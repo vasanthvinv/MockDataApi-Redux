@@ -35,9 +35,11 @@ function Data() {
       <table>
         <thead>
           <tr>
-            {datas.length > 0 && Object.keys(datas[0]).map((item) => (
-              <th>{item.toUpperCase()}</th>
-            ))}
+            {datas.length > 0 &&
+              Object.keys(datas[0]).map((item) => (
+                <th>{item.toUpperCase()}</th>
+              ))}
+            <th>Remove</th>
           </tr>
         </thead>
         <tbody>
